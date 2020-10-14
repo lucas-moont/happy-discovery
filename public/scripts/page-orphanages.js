@@ -10,7 +10,7 @@ const icon = L.icon({
     iconUrl: "./public/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68],
-    popupArnchor: [170, 2]
+    popupArnchor: [170 , 2]
 })
 
 //create popup overlay
@@ -20,6 +20,7 @@ const popup = L.popup({
     className: "map-popup",
     minwidth: 300,
     minheight: 300,
+    offset: [150, 14]
 }).setContent('Lar das meninas <a href="orphanage.html?id=1 class="choose-orphanage"> <img src="./public/images/arrow-white.svg"></a>')
 
 //create and add marker
